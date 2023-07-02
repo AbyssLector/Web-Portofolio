@@ -29,7 +29,7 @@ export const Bio = () => {
     })
 
     return (
-        <div className='mt-6 sm:mt-12' id='home'>
+        <div className='mt-6 sm:mt-16' id='home'>
             <p className='text-transparent text-3xl sm:text-4xl font-bold bg-clip-text bg-gradient-to-br from-green-400 to-blue-400 text-center sm:text-left'>
                 {welcomeText}
                 {typed ?
@@ -43,7 +43,7 @@ export const Bio = () => {
                     <Cursor cursorStyle='_' cursorColor='#3BF6BE' />
                 </>) : <></>}
             </p>
-            <div className='mt-16 sm:mt-24 flex flex-col md:flex-row gap-8'>
+            <div className='mt-16 sm:mt-28 flex flex-col md:flex-row gap-8'>
                 <div className='flex flex-col sm:flex-row gap-8 basis-2/3'>
                     <div className='flex-none mx-auto sm:mx-0'>
                         <div className='max-w-[150px] rounded-full bg-gradient-to-br from-green-400 to-blue-400 p-1'>
@@ -70,7 +70,7 @@ export const Bio = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-16 sm:mt-24 flex flex-col md:flex-row gap-8'>
+            <div className='mt-16 sm:mt-28 flex flex-col md:flex-row gap-8'>
                 <div className='basis-[38%] flex flex-col gap-8'>
                     <p className='text-bitWhite font-bold text-xl text-center md:text-left'>
                         What i do
@@ -86,7 +86,7 @@ export const Bio = () => {
                         <div className='absolute left-1/2 top-[-35px] -translate-x-1/2 rounded-full bg-gradient-to-br from-green-400 to-blue-400 p-[2px]'>
                             <div className='p-3 rounded-full bg-white'>
                                 <Lottie animationData={codeAnimation} style={lottieStyle} />
-                                {/* <img src='/icons/fe.png' width={40} /> */}
+
                             </div>
                         </div>
                         <div className='mt-10'>
@@ -104,7 +104,7 @@ export const Bio = () => {
                         <div className='absolute left-1/2 top-[-35px] -translate-x-1/2 rounded-full bg-gradient-to-br from-green-400 to-blue-400 p-[2px]'>
                             <div className='p-3 rounded-full bg-white'>
                                 <Lottie animationData={gearAnimation} style={lottieStyle} />
-                                {/* <img src='/icons/be.png' width={40} /> */}
+
                             </div>
                         </div>
                         <div className='mt-10'>

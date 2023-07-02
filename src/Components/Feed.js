@@ -21,7 +21,7 @@ export const Feed = () => {
             <p className='text-bitWhite text-2xl font-bold text-center sm:text-left lg:text-4xl'>
                 My Projects
             </p>
-            <div className='mt-6 lg:w-[75%]'>
+            <div className='mt-6 sm:mt-12 lg:w-[75%]'>
                 {/* project */}
                 {myProjects.map(data => {
                     return (
