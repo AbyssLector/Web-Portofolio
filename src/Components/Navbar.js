@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-// import Lottie from 'lottie-react'
-// import lineAnimation from '../asset/line.json'
+
 function Navbar() {
     const [fragment, setFragment] = useState('');
     const [dropdown, setdropdown] = useState(false);
@@ -23,7 +22,7 @@ function Navbar() {
                     <div className='justify-between text-xl gap-8 items-end hidden sm:flex text-slate-400' >
                         <a href='#home' onClick={() => handleFragmentChange('home')} className={(fragment === 'home' ? text_white : '')}>Home</a>
                         <a href='#project' onClick={() => handleFragmentChange('project')} className={(fragment === 'project' ? text_white : '')}>Project</a>
-                        <a href='#snippet' onClick={() => handleFragmentChange('snippet')} className={(fragment === 'snippet' ? text_white : '')}>Snippet</a>
+                        <a href='#github' onClick={() => handleFragmentChange('github')} className={(fragment === 'github' ? text_white : '')}>Github</a>
                     </div>
 
                     {/* Mobile */}
@@ -34,7 +33,7 @@ function Navbar() {
                             {dropdown && (<div className='absolute right-0 min-w-[210px] bg-white mt-3 p-5 rounded-lg mr-3 flex flex-col gap-2 items-end text-slate-500 animate-fadeIn'>
                                 <a href='#home' onClick={() => handleFragmentChange('home')}>Home</a>
                                 <a href='#project' onClick={() => handleFragmentChange('project')}>Project</a>
-                                <a href='#snippet' onClick={() => handleFragmentChange('snippet')}>Snippet</a>
+                                <a href='#github' onClick={() => handleFragmentChange('github')}>Github</a>
                             </div>)}
                         </div>
                     </div>

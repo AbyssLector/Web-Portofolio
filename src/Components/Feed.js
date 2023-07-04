@@ -19,10 +19,10 @@ export const Feed = () => {
     return (
         <div className='mt-16 sm:mt-24' id='project' data-aos="fade-right">
             <p className='text-bitWhite text-2xl font-bold text-center sm:text-left lg:text-4xl'>
-                My Projects
+                My Projects and <br className=' md:hidden' /> Accomplishments
             </p>
             <div className='mt-6 sm:mt-12 lg:w-[75%]'>
-                {/* project */}
+
                 {myProjects.map(data => {
                     return (
                         <Project data={data} handleClick={handleClick} />

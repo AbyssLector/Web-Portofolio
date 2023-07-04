@@ -1,13 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Bio } from './Components/Bio';
 import Navbar from './Components/Navbar';
 import { Feed } from './Components/Feed';
 import Codes from './Components/Codes';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import HashLoader from "react-spinners/HashLoader";
 import { useSpring, animated } from "react-spring"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import particleConfig from './Components/particleConfig'
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 function App() {
   const [loading, setloading] = useState(false);
   const propsFadeOut = useSpring({
@@ -29,7 +31,14 @@ function App() {
       setloading(false)
     }, 3000);
   }, []);
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    await loadFull(engine);
+  }, []);
 
+  const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+  }, []);
   return (
     <>
       {
@@ -51,13 +60,21 @@ function App() {
           </div>
           :
           <animated.div style={propsFadeIn}>
+            <div className='-z-10'>
+              <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={particleConfig} />
+            </div>
             <div className='container mx-auto sm:w-[85%] w-full'>
-
               <Navbar />
-              <div className='px-3 mb-[300px]'>
+              <div className='px-3 mb-[300px] '>
+
                 <Bio />
                 <Feed />
                 <Codes />
+
               </div>
             </div>
           </animated.div>

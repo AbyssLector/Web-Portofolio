@@ -32,9 +32,9 @@ const Codes = () => {
         window.open(url, '_blank');
     }
     return (
-        <div className='mt-16 sm:mt-24' id='snippet' data-aos="fade-right">
+        <div className='mt-16 sm:mt-24' id='github' data-aos="fade-right">
             <p className='text-bitWhite text-2xl font-bold text-center sm:text-left lg:text-4xl'>
-                Github Repositories
+                My Github Projects
             </p>
             <div className='mt-6 sm:mt-12 flex flex-row gap-8 justify-center flex-wrap lg:w-[75%] w-full lg:mx-auto'>
                 {repos.map(data => {

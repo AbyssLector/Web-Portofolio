@@ -9,7 +9,8 @@ export const Bio = () => {
     const links = {
         ig: 'https://www.instagram.com/ihsanulafkar01/',
         ln: 'https://www.linkedin.com/in/ihsanul-afkar-876229218',
-        email: 'mailto:ihsanul2001@gmail.com'
+        email: 'mailto:ihsanul2001@gmail.com',
+        github: 'https://github.com/IhsanulAfkar'
     }
     const clickHandler = (e) => {
         window.open(links[e.target.id], '_blank').focus()
@@ -45,9 +46,9 @@ export const Bio = () => {
             </p>
             <div className='mt-16 sm:mt-28 flex flex-col md:flex-row gap-8'>
                 <div className='flex flex-col sm:flex-row gap-8 basis-2/3'>
-                    <div className='flex-none mx-auto sm:mx-0'>
-                        <div className='max-w-[150px] rounded-full bg-gradient-to-br from-green-400 to-blue-400 p-1'>
-                            <img src='/foto.png' className='rounded-full' />
+                    <div className='flex-none mx-auto sm:mx-0 z-10'>
+                        <div className='max-w-[150px] rounded-full bg-gradient-to-br from-green-400 to-blue-400 p-1 '>
+                            <img src='/foto.png' className='rounded-full ' />
                         </div>
                     </div>
                     <div className='flex flex-col gap-6 '>
@@ -66,6 +67,8 @@ export const Bio = () => {
                         <div className='hover:cursor-pointer'><img id='ln' src='/icons/ln.png'
                             onClick={clickHandler} /></div>
                         <div className='hover:cursor-pointer'><img id='email' src='/icons/email.png'
+                            onClick={clickHandler} /></div>
+                        <div className='hover:cursor-pointer'><img id='github' src='/icons/github.png'
                             onClick={clickHandler} /></div>
                     </div>
                 </div>
