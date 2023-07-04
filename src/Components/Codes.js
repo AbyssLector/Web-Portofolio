@@ -5,7 +5,7 @@ const Codes = () => {
     const [repos, setrepos] = useState([]);
     useEffect(() => {
         const fetchGithub = async () => {
-            const response = await fetch(`https://api.github.com/users/AbyssLector/repos`)
+            const response = await fetch(`https://api.github.com/users/IhsanulAfkar/repos`)
             const rawData = await response.json()
             if (response.ok) {
                 const newArr = []
