@@ -3,6 +3,15 @@ import Snippet from './Snippet'
 
 const Codes = () => {
     const [repos, setrepos] = useState([]);
+    const myRepos = [
+        {
+            'name': 'lorem',
+            'url': '',
+            'description': 'e.description',
+            'language': ' e.language',
+            'full_name': 'e.full_name'
+        }
+    ]
     useEffect(() => {
         const fetchGithub = async () => {
             const response = await fetch(`https://api.github.com/users/IhsanulAfkar/repos`)

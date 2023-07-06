@@ -2,6 +2,7 @@ import { Bio } from './Components/Bio';
 import Navbar from './Components/Navbar';
 import { Feed } from './Components/Feed';
 import Codes from './Components/Codes';
+import Cv from './Components/Cv';
 import { useEffect, useState, useCallback } from 'react';
 import HashLoader from "react-spinners/HashLoader";
 import { useSpring, animated } from "react-spring"
@@ -32,13 +33,14 @@ function App() {
     }, 3000);
   }, []);
   const particlesInit = useCallback(async engine => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async container => {
-    await console.log(container);
   }, []);
+  const handleClick = (url) => {
+    window.open(url, '_blank');
+  }
   return (
     <>
       {
@@ -67,13 +69,14 @@ function App() {
                 loaded={particlesLoaded}
                 options={particleConfig} />
             </div>
-            <div className='container mx-auto sm:w-[85%] w-full'>
+            <Cv handleClick={handleClick} />
+            <div className='container mx-auto sm:w-[85%] w-full relative'>
               <Navbar />
               <div className='px-3 mb-[300px] '>
 
                 <Bio />
                 <Feed />
-                <Codes />
+                <Codes handleClick={handleClick} />
 
               </div>
             </div>
