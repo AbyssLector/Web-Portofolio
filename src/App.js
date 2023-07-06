@@ -75,7 +75,7 @@ function App() {
               <div className='px-3 mb-[300px] '>
 
                 <Bio />
-                <Feed />
+                <Feed handleClick={handleClick} />
                 <Codes handleClick={handleClick} />
 
               </div>

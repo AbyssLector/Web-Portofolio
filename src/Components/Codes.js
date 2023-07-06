@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Snippet from './Snippet'
 
-const Codes = () => {
+const Codes = ({ handleClick }) => {
     const [repos, setrepos] = useState([]);
     const myRepos = [
         {
@@ -37,11 +37,9 @@ const Codes = () => {
         }
         fetchGithub()
     }, []);
-    const handleClick = (url) => {
-        window.open(url, '_blank');
-    }
+
     return (
-        <div className='mt-16 sm:mt-24' id='github' data-aos="fade-right">
+        <div className='mt-16 sm:mt-24' id='repo' data-aos="fade-right">
             <p className='text-bitWhite text-2xl font-bold text-center sm:text-left lg:text-4xl'>
                 My Github Projects
             </p>
