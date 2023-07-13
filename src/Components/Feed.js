@@ -27,6 +27,14 @@ export const Feed = ({ handleClick }) => {
             desc: "Assigned to handle back-end using codeigniter framework in ARA 2023.",
             url: 'https://www.instagram.com/p/CfD90TzJ8CI/'
         },
+        // {
+        //     id:4,
+        //     img: '/project/3.png',
+        //     tag: 'Web Development, Staff, Comitee',
+        //     title: 'Staff of Website Development ARA 2023',
+        //     desc: "Assigned to handle back-end using codeigniter framework in ARA 2023.",
+        //     url: 'https://www.instagram.com/p/CbensTYlChA/'
+        // }
     ]
 
     return (

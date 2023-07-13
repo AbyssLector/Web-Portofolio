@@ -7,7 +7,7 @@ const Snippet = ({ data, handleClick }) => {
                 <p className='text-bitWhite font-bold text-lg'>{data.name}</p>
                 <p className='mt-4 text-slate-400'>{data.description ? data.description : "No description"}</p>
                 <div className='flex items-center justify-between mt-8 '>
-                    <div className='text-bitWhite'>{data.language}</div>
+                    <div className='text-bitWhite'>{data.tech}</div>
                 </div>
             </div>
         </div>
