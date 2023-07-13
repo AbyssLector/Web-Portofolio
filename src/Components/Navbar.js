@@ -22,7 +22,7 @@ function Navbar() {
                     <div className='justify-between text-xl gap-8 items-end hidden sm:flex text-slate-400' >
                         <a href='#home' onClick={() => handleFragmentChange('home')} className={(fragment === 'home' ? text_white : '')}>Home</a>
                         <a href='#project' onClick={() => handleFragmentChange('project')} className={(fragment === 'project' ? text_white : '')}>Project</a>
-                        <a href='#repo' onClick={() => handleFragmentChange('repo')} className={(fragment === 'repo' ? text_white : '')}>Github</a>
+                        <a href='#repo' onClick={() => handleFragmentChange('repo')} className={(fragment === 'repo' ? text_white : '')}>Repos</a>
                     </div>
 
                     {/* Mobile */}
@@ -33,7 +33,7 @@ function Navbar() {
                             {dropdown && (<div className='absolute right-0 min-w-[210px] bg-white mt-3 p-5 rounded-lg mr-3 flex flex-col gap-2 items-end text-slate-500 animate-fadeIn'>
                                 <a href='#home' onClick={() => handleFragmentChange('home')}>Home</a>
                                 <a href='#project' onClick={() => handleFragmentChange('project')}>Project</a>
-                                <a href='#repo' onClick={() => handleFragmentChange('repo')}>Github</a>
+                                <a href='#repo' onClick={() => handleFragmentChange('repo')}>Repos</a>
                             </div>)}
                         </div>
                     </div>

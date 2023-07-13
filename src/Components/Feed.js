@@ -26,15 +26,7 @@ export const Feed = ({ handleClick }) => {
             title: 'Staff of Website Development ARA 2023',
             desc: "Assigned to handle back-end using codeigniter framework in ARA 2023.",
             url: 'https://www.instagram.com/p/CfD90TzJ8CI/'
-        },
-        // {
-        //     id:4,
-        //     img: '/project/3.png',
-        //     tag: 'Web Development, Staff, Comitee',
-        //     title: 'Staff of Website Development ARA 2023',
-        //     desc: "Assigned to handle back-end using codeigniter framework in ARA 2023.",
-        //     url: 'https://www.instagram.com/p/CbensTYlChA/'
-        // }
+        }
     ]
 
     return (
@@ -45,7 +37,7 @@ export const Feed = ({ handleClick }) => {
             <div className='mt-6 sm:mt-12 lg:w-[75%]'>
                 {myProjects.map(data => {
                     return (
-                        <Project data={data} handleClick={handleClick} />
+                        <Project key={data.id} data={data} handleClick={handleClick} />
                     )
                 })}
 

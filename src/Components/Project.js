@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Project = ({ data, handleClick }) => {
-    console.log(data.img)
     return (
         <div className='flex gap-6 flex-col sm:flex-row mb-8 ' data-aos="fade-up">
             <div className='basis-1/2 rounded-md overflow-hidden transform hover:scale-105 duration-500 flex'>
