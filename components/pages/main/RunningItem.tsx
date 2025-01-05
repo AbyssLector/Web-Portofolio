@@ -12,7 +12,7 @@ const MasteryCard = ({ data }: { data: Mastery }) => {
       <div className='flex flex-col justify-between items-center h-full'>
         <div className={'p-2 rounded-lg bg-slate-200'}>
           <Image
-            alt="Woman listing to music"
+            alt={data.text}
             className="object-cover "
             height={80}
             src={'/icons/mastery/' + data.icon}

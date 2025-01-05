@@ -27,8 +27,8 @@ function Navbar() {
                                 onClick={() => { setdropdown(prev => !prev) }} />
                             {dropdown && (<div className='absolute right-0 min-w-[210px] bg-white mt-3 p-5 rounded-lg mr-3 flex flex-col gap-2 items-end text-slate-500 animate-fadeIn'>
                                 <a href='#home' onClick={() => handleFragmentChange('home')}>Home</a>
-                                <a href='#project' onClick={() => handleFragmentChange('project')}>Project</a>
-                                <a href='#repo' onClick={() => handleFragmentChange('repo')}>Repos</a>
+                                <a href='#about' onClick={() => handleFragmentChange('about')}>About</a>
+                                <a href='#project' onClick={() => handleFragmentChange('project')}>Experience</a>
                             </div>)}
                         </div>
                     </div>
