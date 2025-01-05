@@ -57,7 +57,7 @@ export const workExperiences:WorkExperience[]=[
         end_month:'Dec 2023',
         title:'PT Adma Digital Solusi (MSIB Internship)',
         subtitle:'Web Developer',
-        description:'lorem',
+        description:'Develop application called Forwardin with teams consist of Back-End, UI/UX, Technical Writer, Data Analyst, Digital Marketing Specialists.',
         tag:'Laravel, Next JS'
     },
 ]
